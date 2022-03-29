@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 375px)
+
+.imagem-fundo {
+	position: absolute;
+}
+
+.imagem-principal {
+	position: relative;
+	left: 5rem;
+	bottom: 37rem;	
+	
+}
+
+.aspas {
+	position: relative;
+	bottom: 32rem;
+	left: 17rem;
+}
+
+.testemunho-tanya {
+	position: relative;
+	right: 13rem;
+	bottom: 2rem;
+	width: 50%;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.autor-tanya {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.cargo {
+	font-size: 25px;
+	position: relative;
+	left: 1rem;
+}
