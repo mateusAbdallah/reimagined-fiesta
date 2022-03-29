@@ -4,26 +4,54 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
-@media screen and (min-width: 375px)
-
 .imagem-fundo {
 	position: absolute;
+	height: auto;
 }
 
 .imagem-principal {
 	position: relative;
-	left: 5rem;
-	bottom: 37rem;	
+	right: 40rem;
+	bottom: 3rem;
+	width: 35rem;
+	height: 34rem;
 	
 }
 
+.botao {
+	border-radius: 5rem;
+	width: 6rem;
+	height: 3.5rem;
+	border: 2px black;
+	position: relative;
+	bottom: 5rem;
+	left: 20rem;
+}
+
+.seta-esquerda {
+	position: relative;
+	right: 1.5rem;
+}
+
+.seta-direita {
+	position: relative;
+	left: 1.5rem;
+}
 .aspas {
 	position: relative;
-	bottom: 32rem;
 	left: 17rem;
 }
 
 .testemunho-tanya {
+	position: relative;
+	right: 13rem;
+	bottom: 2rem;
+	width: 50%;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.testemunho-john {
 	position: relative;
 	right: 13rem;
 	bottom: 2rem;
@@ -37,8 +65,19 @@ body {
 	font-weight: bold;
 }
 
-.cargo {
+.autor-john {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.cargo-tanya {
 	font-size: 25px;
 	position: relative;
 	left: 1rem;
+}
+
+.cargo-john {
+	font-size: 25px;
+	position: relative;
+	right: 3rem;
 }
