@@ -1,14 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body {
+* {
+	box-sizing: border-box;
+}
+
+html {
 	font-family: 'Inter', sans-serif;
 }
 
-.imagem-fundo {
+.sr-only {
 	position: absolute;
-	height: auto;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
+p {
+	font-weight: 300;
+	font-size: 1.12rem;
+	line-height: 24px;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/pattern-bg.svg) no-repeat bottom;
+	background-size: contain;
+	padding: 2rem;
+}
+
+.slider {
+	height: 100%;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.slide {
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.slide-imagem {
+	height: 100%;
+	margin: 0 auto;
+	padding: 1.8rem 2rem;
+	background: url(images/pattern-bg.svg) no-repeat bottom right ;
+	background-size: cover;
+	margin-bottom: 2rem;
+}
+
+.slide-imagem img {
+	height: 100%;
+	width: 250px;
+}
+
+.slide-texto {
+	padding: 1.5rem 0;
+	background: url(images/pattern-quotes.svg) no-repeat top center;
+	background-size: 5rem;
+	z-index: 1;
+}
+
+.slide-texto .texto {
+	margin-bottom: 1.2rem;
+}
+
+.autor {
+	font-weight: 700;
+	font-size: 0.9rem;
+	line-height: 20px;
+}
+
+.autor span {
+	color: var(-grayish-blue);
+	display: block;
+	font-weight: 500;
+}
+
+button {
+	border: none;
+}
+
+.slider-botoes {
+	box-shadow: -15px 10px 30px 1px rgba(133, 133, 172, 0.75);
+	width: 80px;
+	height: 40px;
+	border-radius: 25px;
+	background-color: white;
+	position: absolute;
+	top: 260px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.prev, .next {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: url(images/icon-prev.svg) no-repeat center center;
+	background-size: 10px;
+}
+
+.prev:hover, .next:hover {
+	cursor: pointer;
+	box-shadow: 0 0.5rem 0.5rem -0.4rem var(-dark-blue);
+}
+
+.next {
+	left: 50%;
+	background: url(images/icon-next.svg) no-repeat center center;
+	background-size: 10px;
+}
+
+.slide-2 {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/*
 .imagem-principal {
 	position: relative;
 	right: 40rem;
@@ -42,16 +166,7 @@ body {
 	left: 17rem;
 }
 
-.testemunho-tanya {
-	position: relative;
-	right: 13rem;
-	bottom: 2rem;
-	width: 50%;
-	font-size: 30px;
-	font-weight: 300;
-}
-
-.testemunho-john {
+.testemunho {
 	position: relative;
 	right: 13rem;
 	bottom: 2rem;
@@ -81,3 +196,6 @@ body {
 	position: relative;
 	right: 4rem;
 }
+
+ */
+
