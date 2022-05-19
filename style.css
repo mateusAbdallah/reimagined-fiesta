@@ -28,7 +28,111 @@ body {
 }
 
 .container__images-tanya {
+	z-index: 10;
 	width: 95%;
 	border-radius: 10px;
+	object-fit: cover;
+	box-shadow: 0px 5px 20px rgb(98, 98, 98);
+	transition-delay: -10s;
+}
 
+.container__buttons {
+	width: 5rem;
+	padding: .5rem;
+	border-radius: 50px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 94%;
+	left: 35%;
+	box-shadow: 0 5px 20px rgb(95, 94, 94);
+}
+
+button {
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button img {
+	width: 80%;
+}
+
+.info {
+	background: url("./images/pattern-quotes.svg") no-repeat top;
+	background-size: 20%;
+	text-align: center;
+	margin-top: 1rem;
+	border: 1px transparent solid;
+}
+
+.info__testimonial {
+	margin: 2.2rem auto 1rem;
+	width: 90%;
+	line-height: 30px;
+	line-break: auto;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.info__author-name {
+	font-size: 1.1rem;	
+}
+
+.info__author-occupation {
+	margin-top: .5rem;
+	font-size: 1rem;
+	font-weight: 300;	
+}
+
+@media screen and (min-width: 1440px){
+	.container {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 80%;
+		align-items: center;
+		position: relative;
+	}
+
+	.container__images {
+		width: 40%;
+		margin-left: 55%;
+	}
+
+	.container__images-tanya {
+		z-index: -1;
+	}
+
+	.container__buttons {
+		margin-left: -30%;
+	}
+
+	.info {
+		width: 55%;
+		z-index: 10;
+		position: absolute;
+		margin-right: 35%;
+		text-align: left;
+		background-position: left top;
+	}
+
+	.info__testimonial {
+		margin: 2.2rem 0 1rem;
+		font-size: 22px;
+	}
+
+	.info__author {
+		margin-top: 1.5rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.info__author-occupation {
+		margin: 0;
+	}
 }
